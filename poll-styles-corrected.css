@@ -1,7 +1,7 @@
 /*
-Use your giggi theme:
-Select "giggi" theme in the dashboard
-On your https://poll.ma.pe/overlay/<id>/ URL add ?giggiCss=https://example.com/style.css
+Use your Custom theme:
+Select "Custom" theme in the dashboard
+On your https://poll.ma.pe/overlay/<id>/ URL add ?CustomCss=https://example.com/style.css
 
 Please keep the link to https://poll.ma.pe visible for a short period of time.
 */
@@ -9,30 +9,31 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 @import url(https://fonts.googleapis.com/css?family=Abel);
 
 /*
-* "giggi" refers to the theme assigned to the poll element
+* "Custom" refers to the theme assigned to the poll element
 */
-.giggi {
+.Custom {
     background: #000;
     width: 400px;
     transition: opacity 1s;
     padding: 10px;
+
     font-family: Abel;
     opacity: 0;
 }
 
-.giggi.finished,
-.giggi.active {
+.Custom.finished,
+.Custom.active {
     opacity: 1;
 }
 
-.giggi .metaInfo {
+.Custom .metaInfo {
     background: green;
     overflow: hidden;
     padding: 0 10px;
 }
 
-.giggi .total,
-.giggi .duration {
+.Custom .total,
+.Custom .duration {
     background: #444;
     float: left;
     width: 49%;
@@ -42,44 +43,44 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
     line-height: 1.3;
 }
 
-.giggi .total strong,
-.giggi .duration strong {
+.Custom .total strong,
+.Custom .duration strong {
     color: #ffa;
     font-size: 20px;
     display: block;
 }
 
-.giggi .total {
+.Custom .total {
     margin-right: 2%;
 }
 
-.giggi.finished .options li,
-.giggi.removing .options li {
+.Custom.finished .options li,
+.Custom.removing .options li {
     opacity: 0.3;
     transition: all 1s;
 }
 
-.giggi.finished .options li.highest,
-.giggi.removing .options li.highest {
+.Custom.finished .options li.highest,
+.Custom.removing .options li.highest {
     color: #ffa;
     opacity: 1;
 }
 
-.giggi.finished .options li.help,
-.giggi.removing .options li.help {
+.Custom.finished .options li.help,
+.Custom.removing .options li.help {
     height: 0;
 }
 
-.giggi.finished .metaInfo,
-.giggi.removing .metaInfo {
+.Custom.finished .metaInfo,
+.Custom.removing .metaInfo {
     opacity: 0.3;
 }
 
-.giggi.active .options li.help {
+.Custom.active .options li.help {
     height: 35px;
 }
 
-.giggi .options li {
+.Custom .options li {
     position: relative;
     border: 1px;
     padding: 10px;
@@ -91,7 +92,7 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
     font-size: 15px;
 }
 
-.giggi .options li.question {
+.Custom .options li.question {
     padding: 10px 20px;
     white-space: normal;
     background: blue;
@@ -101,25 +102,25 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
     position: relative;
 }
 
-.giggi .options li.help {
+.Custom .options li.help {
     background: brown;
     text-align: center;
     overflow: hidden;
     height: 0;
 }
 
-.giggi .options li.help span {
+.Custom .options li.help span {
     display: block;
     padding: 10px;
 }
 
-.giggi .options li .procent {
+.Custom .options li .procent {
     position: absolute;
     top: 10px;
     right: 15px;
 }
 
-.giggi .options li .number {
+.Custom .options li .number {
     padding: 5px 10px;
     background: #333;
     position: absolute;
@@ -127,13 +128,13 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
     left: 10px;
 }
 
-.giggi .options li .bar {
+.Custom .options li .bar {
     background: #444;
     height: 5px;
     margin-top: 5px;
 }
 
-.giggi .options li .bar .bar-inner {
+.Custom .options li .bar .bar-inner {
     background: #fff;
     height: 100%;
     width: 0;
@@ -141,24 +142,24 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
     position: relative;
 }
 
-.giggi .options li .text {
+.Custom .options li .text {
     line-height: 1.3;
 }
 
 /*
 * Optional outer border
 */
-.giggi .border {
+.Custom .border {
     border: 5px solid red;
 }
 
 
-.giggi .credits {
+.Custom .credits {
     opacity: 0;
     height: 0;
 }
 
-.giggi .credits {
+.Custom .credits {
     text-align: center;
     opacity: 1;
     transition: all 1s;
@@ -167,8 +168,8 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
     overflow: hidden;
 }
 
-.giggi.active .credits,
-.giggi.removing .credits {
+.Custom.active .credits,
+.Custom.removing .credits {
     height: 0;
     opacity: 0;
 }
@@ -177,52 +178,52 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 /*
 * Positioning
 */
-.giggi.topLeft {
+.Custom.topLeft {
     top: 20px;
     left: 20px;
 }
 
-.giggi.topCenter {
+.Custom.topCenter {
     top: 20px;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
-.giggi.topRight {
+.Custom.topRight {
     top: 20px;
     right: 20px;
 }
 
-.giggi.middleLeft {
+.Custom.middleLeft {
     top: 50%;
     transform: translate(0, -50%);
     left: 20px;
 }
 
-.giggi.middleCenter {
+.Custom.middleCenter {
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
 }
 
-.giggi.middleRight {
+.Custom.middleRight {
     top: 50%;
     transform: translate(0, -50%);
     right: 20px;
 }
 
-.giggi.bottomLeft {
+.Custom.bottomLeft {
     bottom: 20px;
     left: 20px;
 }
 
-.giggi.bottomCenter {
+.Custom.bottomCenter {
     bottom: 20px;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
-.giggi.bottomRight {
+.Custom.bottomRight {
     bottom: 20px;
     right: 20px;
 }
